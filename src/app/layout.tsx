@@ -16,7 +16,7 @@ export default function RootLayout({
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/gcq2bhw.css" />
       </head>
-      <body className="antialiased">
+      <body className="antialiased bg-brand-white">
         {children}
       </body>
     </html>
