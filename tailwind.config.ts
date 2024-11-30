@@ -19,6 +19,11 @@ export default {
           black: "#010101",
         },
       },
+      fontFamily: {
+        marker: ['permanent-marker', 'sans-serif'],
+        franklin: ['franklin-gothic-atf', 'sans-serif'],
+        jenson: ['adobe-jenson-pro', 'serif'],
+      },
     },
   },
   plugins: [],
