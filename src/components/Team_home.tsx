@@ -13,7 +13,7 @@ const teamMembers = [
 
 export default function Team_home() {
   return (
-    <div className="w-full p-6">
+    <div className="w-full p-6 scroll-mt-16" id="about">
       <div className="max-w-6xl mx-auto">
         {teamMembers.map((member, index) => (
           <div key={index} className="grid md:grid-cols-2 gap-12 items-center">

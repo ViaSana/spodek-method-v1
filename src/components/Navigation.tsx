@@ -23,11 +23,11 @@ export default function Navigation() {
 
           {/* Desktop navigation */}
           <div className="hidden lg:flex items-center lg:space-x-4 xl:space-x-8">
-            <a href="#" className="text-gray-600 hover:text-gray-900">About</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">The Method</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Book</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Workbook</a>
-            <a href="#" className="text-gray-600 hover:text-gray-900">Workshops</a>
+            <a href="#about" className="text-gray-600 hover:text-gray-900">About</a>
+            {/* <a href="#" className="text-gray-600 hover:text-gray-900">The Method</a> */}
+            {/* <a href="#" className="text-gray-600 hover:text-gray-900">Book</a> */}
+            <a href="#workbook" className="text-gray-600 hover:text-gray-900">Free Workbook</a>
+            <a href="#workshops" className="text-gray-600 hover:text-gray-900">Workshops</a>
           </div>
 
           {/* Center title */}
@@ -47,11 +47,11 @@ export default function Navigation() {
         {isMobileMenuOpen && (
           <div className="lg:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-b border-gray-200">
-              <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">About</a>
-              <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">The Method</a>
-              <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Book</a>
-              <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Workbook</a>
-              <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Workshops</a>
+              <a href="#about" className="block px-3 py-2 text-gray-600 hover:text-gray-900">About</a>
+              {/* <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">The Method</a> */}
+              {/* <a href="#" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Book</a> */}
+              <a href="#workbook" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Workbook</a>
+              <a href="#workshops" className="block px-3 py-2 text-gray-600 hover:text-gray-900">Workshops</a>
             </div>
           </div>
         )}

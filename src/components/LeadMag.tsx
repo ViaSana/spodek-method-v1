@@ -20,7 +20,7 @@ const LeadMag: React.FC = () => {
   };
 
   return (
-    <div className="w-full bg-brand-blue text-brand-black font-franklin">
+    <div className="w-full bg-brand-blue text-brand-black font-franklin scroll-mt-16" id="workbook">
       <div className="grid md:grid-cols-2">
         {/* Left Column */}
         <div className="p-8 border-r border-brand-black">

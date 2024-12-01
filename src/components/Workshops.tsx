@@ -3,7 +3,7 @@
 
 export default function Workshops() {
   return (
-    <div className="w-full bg-[#F2F2F2] py-16 px-6">
+    <div className="w-full bg-[#F2F2F2] py-16 px-6 scroll-mt-16" id="workshops">
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 gap-x-12">
           <h4 className="col-span-2 text-brand-lightBlue underline">
