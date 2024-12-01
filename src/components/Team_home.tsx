@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image'
+
 const teamMembers = [
   {
     name: "Josh Spodek",
@@ -17,9 +19,11 @@ export default function Team_home() {
           <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative p-6">
               <div className="bg-gray-200 absolute -top-[.05rem] -right-2 w-[92%] h-[90%] z-10" />
-              <img
+              <Image 
                 src={member.image}
                 alt={member.name}
+                width={500}
+                height={300}
                 className="w-full relative z-10"
               />
             </div>

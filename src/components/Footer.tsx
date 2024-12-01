@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Link from 'next/link'
 
 const Footer: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -17,15 +18,15 @@ const Footer: React.FC = () => {
         {/* Navigation Menu */}
         <nav className="flex justify-between items-center mb-6">
           <div className="flex flex-row gap-6 flex-1 justify-end">
-            <a href="/about" className="hover:underline">About</a>
-            <a href="/method" className="hover:underline">The Method</a>
-            <a href="/book" className="hover:underline">Book</a>
+            <Link href="/about" className="hover:underline">About</Link>
+            <Link href="/method" className="hover:underline">The Method</Link>
+            <Link href="/book" className="hover:underline">Book</Link>
           </div>
-          <a href="/" className="text-xl font-bold mx-8">THE SPODEK METHOD</a>
+          <Link href="/" className="text-xl font-bold mx-8">THE SPODEK METHOD</Link>
           <div className="flex flex-row gap-6 flex-1">
-            <a href="/workshops" className="hover:underline">Workshops</a>
-            <a href="/workbook" className="hover:underline">Workbook</a>
-            <a href="/contact" className="hover:underline">Contact</a>
+            <Link href="/workshops" className="hover:underline">Workshops</Link>
+            <Link href="/workbook" className="hover:underline">Workbook</Link>
+            <Link href="/contact" className="hover:underline">Contact</Link>
           </div>
         </nav>
         <hr className="border-brand-red border-2 mb-6" />

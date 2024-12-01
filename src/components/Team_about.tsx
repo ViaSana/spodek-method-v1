@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image'
+
 const teamMembers = [
   {
     name: "Joshua Spodek",
@@ -26,9 +28,11 @@ export default function Team_home() {
           {teamMembers.map((member, index) => (
             <div key={index} className="text-center">
               <div className="w-48 h-48 mx-auto mb-4 rounded-full overflow-hidden">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
+                  width={500}
+                  height={300}
                   className="w-full h-full object-cover"
                 />
               </div>

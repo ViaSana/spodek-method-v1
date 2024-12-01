@@ -28,7 +28,7 @@ const LeadMag: React.FC = () => {
             Debunking the Myths Holding You Back
           </h4>
           <p className="mb-6 font-jenson">
-            Many believe personal actions don't matter or that sustainability requires sacrifice. 
+            Many believe personal actions don&apos;t matter or that sustainability requires sacrifice. 
             The Spodek Method shows it can be joyful, empowering, and aligned with your values.
           </p>
           <div className="flex items-center mb-4 group cursor-pointer">
@@ -53,11 +53,11 @@ const LeadMag: React.FC = () => {
 
         {/* Right Column */}
         <div className="p-8">
-          <h4 className="text-black">If you've ever thought:</h4>
+          <h4 className="text-black">If you&apos;ve ever thought:</h4>
           <ul className="list-disc ml-6 mb-6 font-jenson">
-            <li>"Individual actions don't matter"</li>
-            <li>"The plane was going to fly anyway"</li>
-            <li>"I don't want to risk returning to the Stone Age"</li>
+            <li>&ldquo;Individual actions don&apos;t matter&rdquo;</li>
+            <li>&ldquo;The plane was going to fly anyway&rdquo;</li>
+            <li>&ldquo;I don&apos;t want to risk returning to the Stone Age&rdquo;</li>
             <li>Or countless other myths that lead to inaction...</li>
           </ul>
           <h3 className='text-xl mb-6'>

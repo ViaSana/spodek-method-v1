@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image'
+
 const testimonials = [
   {
     quote: "Joshua Spodek has written a stunningly elegant and powerful guide on how to be a human. In the process, we may wind up saving the planet—and ourselves. The core message concerns who we want to be in the world. His reasoning is impeccable, his arguments are brilliant, and his writing is a deep pleasure to experience and to learn from.",
@@ -42,12 +44,14 @@ export default function Testimonials() {
                 index % 2 === 0 ? 'self-start' : 'self-end'
               }`}
             >
-              <p className="font-jenson text-lg mb-4">"{testimonial.quote}"</p>
+              <p className="font-jenson text-lg mb-4">&ldquo;{testimonial.quote}&rdquo;</p>
               <div className="mt-4 flex items-center gap-4">
-                <img 
+                <Image 
                   src={testimonial.image} 
                   alt={testimonial.author}
                   className="w-12 h-12 rounded-full object-cover"
+                  width={500}
+                  height={300}
                 />
                 <div>
                   <p className="font-franklin font-bold text-brand-red">— {testimonial.author}</p>
