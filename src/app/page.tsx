@@ -9,6 +9,7 @@ import Donate from "@/components/Donate";
 import Workshops from "@/components/Workshops";
 import Team_home from "@/components/Team_home"; 
 import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
     <>

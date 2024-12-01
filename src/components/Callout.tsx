@@ -5,34 +5,35 @@ export default function Callout() {
     <div className="flex flex-col items-center justify-center p-6">
       {/* Text Block */}
       <div className="max-w-5xl pl-48">
-        <h1 className="text-brand-red font-marker font-bold text-2xl md:text-3xl uppercase mb-3">
+        <h2 className="text-brand-red uppercase">
           Sustainability isn't about sacrifice.
-        </h1>
+        </h2>
         <div className="flex flex-col gap-3 font-franklin text-black">
-          <p className=" font-bold text-lg md:text-2xl leading-relaxed">
+          <h3>
             It's about doing more with what you already have.
-          </p>
+          </h3>
           <p>The Spodek Method helps you resolve inner conflicts and tap into your deepest motivations, making sustainable living an empowering and joyful experience. </p>
-          <p className=" font-bold text-lg md:text-2xl">
+          <h3>
             Begin Your Journey:
-          </p>
+          </h3>
 
           {/* Link Row */}
-          <div className="flex flex-row justify-between underline font-bold text-xl md:text-xl leading-relaxed">
+          <div className="flex flex-row justify-between underline font-bold text-lg md:text-xl leading-relaxed">
             <div className="col-1/3">
               <a href="#" className="hover:text-brand-lightBlue hover:scale-105 transition-all">
-                Read Sustainability Simplified
+                Read Sustainability Simplified →
+              </a>
+              
+            </div>
+            <div className="col-1/3">
+              <a href="#" className="hover:text-brand-lightBlue hover:scale-105 transition-all">
+                Download the Workbook →
               </a>
             </div>
             <div className="col-1/3">
               <a href="#" className="hover:text-brand-lightBlue hover:scale-105 transition-all">
-                Download the Workbook
+                Join A Workshop →
               </a>
-            </div>
-            <div className="col-1/3">
-              <a href="#" className="hover:text-brand-lightBlue hover:scale-105 transition-all">
-                Join A Workshop
-                </a>
             </div>
           </div>
 

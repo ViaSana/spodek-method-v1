@@ -29,9 +29,9 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="w-full py-16 px-6">
+    <div className="w-full py-12 px-6">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-franklin font-semibold text-brand-black text-center mb-12">
+        <h2 className="text-center mb-6 font-franklin text-brand-black">
           What People Are Saying
         </h2>
         <div className="flex flex-col gap-8">
@@ -62,8 +62,8 @@ export default function Testimonials() {
             <button className="btn">
               Buy the Book
             </button>
-            <a href="#" className="text-brand-black hover:text-brand-red font-bold font-franklin underline transition">
-              Download a Free Chapter
+            <a href="#" className="text-brand-black font-bold font-franklin underline hover:text-brand-lightBlue hover:scale-105 transition-all">
+              Download a Free Chapter →
             </a>
           </div>
         </div>

@@ -15,26 +15,26 @@ export default function Team_home() {
       <div className="max-w-6xl mx-auto">
         {teamMembers.map((member, index) => (
           <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="relative">
-              <div className="bg-gray-200 absolute top-8 right-8 w-full h-full -z-10" />
+            <div className="relative p-6">
+              <div className="bg-gray-200 absolute -top-[.05rem] -right-2 w-[92%] h-[90%] z-10" />
               <img
                 src={member.image}
                 alt={member.name}
-                className="w-full relative z-10 p-8"
+                className="w-full relative z-10"
               />
             </div>
             <div>
-              <h2 className="text-5xl font-bold mb-8">
+              <h3 className="mb-2">
                 Meet <span className="text-brand-red">{member.name}</span>
-              </h2>
-              <p className="text-lg mb-6">{member.description}</p>
-              <p className="text-lg mb-8">{member.longDescription}</p>
+              </h3>
+              <p className="text-lg mb-4">{member.description}</p>
+              <p className="text-lg mb-4">{member.longDescription}</p>
               <div className="flex gap-8">
-                <a href="#" className="bg-brand-red text-white px-8 py-3 font-bold rounded">
+                <a href="#" className="btn">
                   Get the Book Now
                 </a>
                 <a href="#" className="flex items-center font-bold">
-                  Learn More About Josh <span className="ml-2">→</span>
+                  Learn More About Josh <span className="ml-1">→</span>
                 </a>
               </div>
             </div>

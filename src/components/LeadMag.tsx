@@ -24,9 +24,9 @@ const LeadMag: React.FC = () => {
       <div className="grid md:grid-cols-2">
         {/* Left Column */}
         <div className="p-8 border-r border-brand-black">
-          <h2 className="text-2xl font-marker underline mb-4">
+          <h4 className="underline text-black">
             Debunking the Myths Holding You Back
-          </h2>
+          </h4>
           <p className="mb-6 font-jenson">
             Many believe personal actions don't matter or that sustainability requires sacrifice. 
             The Spodek Method shows it can be joyful, empowering, and aligned with your values.
@@ -43,7 +43,7 @@ const LeadMag: React.FC = () => {
             />
             <label 
               htmlFor="workbookCheckbox" 
-              className="font-franklin text-lg cursor-pointer select-none
+              className="font-jenson text-lg cursor-pointer select-none
               group-hover:text-brand-red transition-colors duration-200"
             >
               Send me the workbook
@@ -53,17 +53,17 @@ const LeadMag: React.FC = () => {
 
         {/* Right Column */}
         <div className="p-8">
-          <h2 className="text-xl font-marker mb-4">If you've ever thought:</h2>
+          <h4 className="text-black">If you've ever thought:</h4>
           <ul className="list-disc ml-6 mb-6 font-jenson">
             <li>"Individual actions don't matter"</li>
             <li>"The plane was going to fly anyway"</li>
             <li>"I don't want to risk returning to the Stone Age"</li>
             <li>Or countless other myths that lead to inaction...</li>
           </ul>
-          <p className="mb-6 font-bold">
+          <h3 className='text-xl mb-6'>
             <span className="text-brand-red">Sustainability Simplified</span>
             {' '}will change your life.
-          </p>
+          </h3>
           <div className="flex items-center mb-4 group cursor-pointer">
             <input
               type="checkbox"
@@ -76,7 +76,7 @@ const LeadMag: React.FC = () => {
             />
             <label 
               htmlFor="introCheckbox" 
-              className="font-franklin text-lg cursor-pointer select-none
+              className="font-jenson text-lg cursor-pointer select-none
               group-hover:text-brand-red transition-colors duration-200"
             >
               Send me the book introduction
@@ -88,9 +88,9 @@ const LeadMag: React.FC = () => {
 
       {/* Full-width email capture form */}
       <div className="p-6 border border-brand-black">
-        <h3 className="text-2xl font-marker mb-4 text-center">Share your email to receive your free downloads:</h3>
+        <h4 className="mb-6 text-center">Share your email to receive your free downloads:</h4>
 
-        <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">
+        <form onSubmit={handleSubmit} className="max-w-xl mx-auto space-y-4">
           <input 
             type="email" 
             placeholder="Enter your email"
@@ -103,7 +103,7 @@ const LeadMag: React.FC = () => {
           <button 
             type="submit" 
               disabled={!formData.wantWorkbook && !formData.wantIntroduction}
-              className={`w-full px-6 py-3 rounded-lg hover:opacity-90 transition
+              className={`w-full btn
               ${(formData.wantWorkbook || formData.wantIntroduction) 
                 ? "bg-brand-red text-brand-white" 
                 : "bg-brand-black text-brand-white"}`}
