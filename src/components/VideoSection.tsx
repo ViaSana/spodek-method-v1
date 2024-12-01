@@ -28,7 +28,7 @@ export default function VideoSection() {
   }, []);
 
   return (
-    <div id="video-section" className="w-full min-h-screen flex items-center justify-center bg-brand-white px-4 py-20">
+    <div id="video-section" className="w-full min-h-screen flex items-center justify-center bg-brand-white p-6">
       <div className="w-full max-w-5xl aspect-video">
         {isInView && (
           <iframe
