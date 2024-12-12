@@ -18,7 +18,7 @@ export default function Team_home() {
         {teamMembers.map((member, index) => (
           <div key={index} className="grid md:grid-cols-2 gap-12 items-center">
             <div className="relative p-6">
-              <div className="bg-gray-200 absolute -top-[.05rem] -right-2 w-[92%] h-[90%] z-10" />
+              <div className="bg-brand-blue absolute -top-[.05rem] -right-2 w-[92%] h-[90%] z-10" />
               <Image 
                 src={member.image}
                 alt={member.name}
